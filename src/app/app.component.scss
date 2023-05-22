@@ -1,0 +1,19 @@
+.tableDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+label{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 19px;
+    color: #000;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #000;
+}
+tr, th{
+    font-family: 'Courier New', Courier, monospace;
+}
