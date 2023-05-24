@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-learning-S';
+  searchItem:any='';
   groceryItems=[
     {sno:1  , name: 'Vegetable'        ,  prices:'$ 700'  ,  availability:  'Available'     },
     {sno:2  , name: 'Rice'             ,  prices:'$ 400'  ,  availability:  'Available'     },

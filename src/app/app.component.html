@@ -8,7 +8,8 @@
         <label for="search">Search Product By Name</label>
        </div>
        <div class="col-lg-10 auto">
-       <input type="text" name="form-control" id="search" placeholder="Search Product By Name">
+       <input type="text" name="form-control" id="search" 
+       placeholder="Search Product By Name" [(ngModel)]="searchItem">
    
        </div>
       </div>
@@ -24,7 +25,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let groceryItem of groceryItems">
+          <tr *ngFor="let groceryItem of groceryItems | filter:searchItem">
             <th scope="row">{{groceryItem.sno}}</th>
             <td>{{groceryItem.name}}</td>
             <td>{{groceryItem.prices}}</td>
